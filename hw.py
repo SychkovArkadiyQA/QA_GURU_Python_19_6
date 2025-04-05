@@ -85,11 +85,6 @@ def test_readable_function():
     go_to_companyname_homepage(page_url="https://companyname.com")
     find_registration_button_on_login_page(page_url="https://companyname.com/login", button_text="Register")
 
-def new_function_replace(func, *args):
-    text = f'{func.__name__.replace("_", " ").title()} [{", ".join(args)}]'
-    print(text)
-    return text
-
 
 def new_function_replace(func, *args):
     text = f'{func.__name__.replace("_", " ").title()} [{", ".join(args)}]'
